@@ -16,8 +16,8 @@ USER_AGENT   = "E-Liquide-FR-DoofinderSync/1.0"
 def make_session() -> requests.Session:
     session = requests.Session()
     retry = Retry(
-        total=5,                          # 5 tentatives max
-        backoff_factor=2,                 # attente : 2s, 4s, 8s, 16s...
+        total=3, 
+        backoff_factor=2,  
         status_forcelist=[403, 429, 500, 502, 503, 504],
         allowed_methods=["GET"]
     )
