@@ -23,6 +23,12 @@ jobs:
       - name: Installer les dépendances
         run: pip install pandas aiohttp requests --quiet
 
+      - name: Vérifier le code avant exécution
+        run: |
+          echo "=== Contenu de generate_csv.py ligne URL_CSV ==="
+          grep "URL_CSV" generate_csv.py
+          echo "=== Fin vérification ==="
+
       - name: Générer le CSV enrichi
         run: python generate_csv.py
 
