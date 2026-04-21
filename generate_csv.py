@@ -7,7 +7,7 @@ from urllib3.util.retry import Retry
 from io import BytesIO
 
 # ── Config ──────────────────────────────────────────────────────────────────
-URL_CSV      = "http://www.e-liquide-fr.com/Data/Doofinder/fr/Oxatis-fr-E-Liquide-23691.csv"
+URL_CSV      = "https://www.e-liquide-fr.com/Data/Doofinder/fr/Oxatis-fr-E-Liquide-23691.csv"
 API_BASE     = "https://api.guaranteed-reviews.com/public/v3/reviews/552918c9aca2931de4c712cec1d792e5/"
 OUTPUT_FILE  = "produits_avec_avis.csv"
 USER_AGENT   = "E-Liquide-FR-DoofinderSync/1.0"
